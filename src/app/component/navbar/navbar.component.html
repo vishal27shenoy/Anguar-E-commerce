@@ -1,0 +1,26 @@
+<div class="navbar_container">
+    <div class="navbar_second_container">
+        <div class="navbar_second_container_left">
+            A<img src="../../../assets/logo.svg" alt="" height="40px" width="40px">z Cart
+        </div>
+        <div class="navbar_second_container_right">
+            <div class="navbar_search">
+                <input type="search" name="" id="" placeholder="search here..." #task>
+                <button (click)="sendDatatoApp(task.value);task.value=''">
+                    <mat-icon class="navbar_search_icon">search</mat-icon>
+                </button>
+            </div>
+            <div class="navbar_home">
+                <a href="">Home</a>
+            </div>
+            <div class="navbar_product">
+                <a href="">Product</a>
+            </div>
+            <div class="navbar_shopping_cart" data-count="0">
+                <a href="">
+                    <mat-icon>shopping_cart</mat-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

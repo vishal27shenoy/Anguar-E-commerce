@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+.navbar_container{
+    height: 50px;
+    background-color: 	rgb(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0%;
+    z-index: 2;
+    width: 100%;
+}
+.navbar_second_container{
+    width: calc(100vw/1.5);
+    height: inherit;
+    display: flex;
+}
+.navbar_second_container_left{
+    height: inherit;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #052328;
+    font-family: "Josefin Sans", sans-serif;
+}
+.navbar_second_container_right{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+    color: #052328;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: smaller;
+}
+a{
+    text-decoration: none;
+    color: #052328;
+}
+.navbar_shopping_cart{
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    font-size: smaller;
+}
+.navbar_shopping_cart::before{
+    content: attr(data-count);
+    position: absolute;
+    box-sizing: border-box;
+    padding-top: 3px;
+    top: -0.70em;
+    right: -0.75em;
+    width: 1.2em;
+    height: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid gray .1px;
+    background-color: #18cdf6c3;
+    color: white;
+    font-weight: 600;
+}
+.navbar_search{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+}
+.navbar_search>input{
+    height: 30px;
+    width: 180px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    font-family: "Josefin Sans", sans-serif;
+    text-indent: 10px;
+    background-color: white;
+}
+.navbar_search>button{
+    background-color: white;
+    border: none;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    display: grid;
+    place-items: center;
+}
+.navbar_search_icon{
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+}

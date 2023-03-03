@@ -1,0 +1,33 @@
+<div class="produvt_container">
+    <div class="choose_category_and_sortby">
+        <div class="choose_category">
+            <select name="" id="" value="choose category">
+                <option value="" selected="selected" disabled="disabled" hidden="hidden">choose category</option>
+                <option value="">Watch</option>
+                <option value="" disabled="disabled"></option>
+                <option value="">TV</option>
+                <option value="" disabled="disabled"></option>
+                <option value="">Phone</option>
+                <option value="" disabled="disabled"></option>
+                <option value="">Laptop</option>
+            </select>
+        </div>
+        <div class="sort_by">
+            <select name="" id="">
+                <option value="" selected="selected" hidden="hidden" disabled="disabled">Sort by</option>
+                <option value="">High-Low</option>
+                <option value="" disabled="disabled"></option>
+                <option value="">Low-High</option>
+            </select>
+        </div>
+    </div>
+    <div class="display_item_in_cards">
+        <div class="display_item_card">
+            <div class="display_card" *ngFor="let val of itemarr">
+                <div class="item">
+                    <app-card [data]="val"></app-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

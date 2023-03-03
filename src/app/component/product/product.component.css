@@ -1,0 +1,48 @@
+.produvt_container{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 60px;
+}
+.choose_category_and_sortby{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.choose_category,.sort_by{
+    height: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    width: 200px;
+    height: 30px;
+    border: solid gray 1px;
+    outline: none;
+    font-weight: 600;
+    text-indent: 10px;
+    font-family: "Josefin Sans", sans-serif;
+}
+option{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    background-color: white;
+}
+.display_item_in_cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.display_item_card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+/* .item{
+    border: solid blue;
+}
+.display_card{
+    border: solid gray;
+} */
